@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ladder1984</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="ladder1984" /><meta name="keywords" content="Ladder1984, Python, Git" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.53 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://ladder1984.github.io/" />
+  <link href="http://ladder1984.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ladder1984" />
+  <link href="http://ladder1984.github.io/index.xml" rel="feed" type="application/rss+xml" title="Ladder1984" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="static/css/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Ladder1984" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://ladder1984.github.io/" />
+<meta property="og:updated_time" content="2019-01-14T15:12:36&#43;08:00"/>
+
+<meta itemprop="name" content="Ladder1984">
+<meta itemprop="description" content="">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ladder1984"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="static/js/classlist.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="static/js/html5shiv.min.js"></script>
+  <script src="static/js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Ladder1984</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Ladder1984</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git%E5%8E%9F%E7%90%86%E4%B9%8B%E4%BB%8E%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%88%B0commit/">Git原理之从创建项目到commit</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-01-14 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      本文试图用底层命令来实现高层命令add和commit操作来介绍git底层原理。 底层命令与高层命令 高层命令（porcelain）：诸如chec
+    </div>
+    <div class="read-more">
+      <a href="/post/git%E5%8E%9F%E7%90%86%E4%B9%8B%E4%BB%8E%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%88%B0commit/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1%E6%B5%85%E6%9E%90/">领域驱动设计浅析</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-12-19 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      简介 领域驱动设计（英语：Domain-driven design，缩写 DDD）是一种通过将实现连接到持续进化的模型来满足复杂需求的软件开发方法
+    </div>
+    <div class="read-more">
+      <a href="/post/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1%E6%B5%85%E6%9E%90/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/kubernetes%E7%AC%94%E8%AE%B0/">Kubernetes笔记</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-09-09 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      1. 简介 Kubernetes一个用于容器集群的自动化部署、扩容以及运维的开源平台。 1.1 基本概念 master：主节点，负责k8s调度，不应部署容器
+    </div>
+    <div class="read-more">
+      <a href="/post/kubernetes%E7%AC%94%E8%AE%B0/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git%E6%80%BB%E7%BB%93/">git总结</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-08-24 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      git中的位置 仓库 工作目录：对项目的某个版本独立提取出来的内容。 这些从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。 暂存区：
+    </div>
+    <div class="read-more">
+      <a href="/post/git%E6%80%BB%E7%BB%93/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E6%B5%85%E8%B0%88%E8%A1%8C%E4%B8%BA%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91bdd/">浅谈行为驱动开发(BDD)</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-05-16 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      简介 BDD（Behaviour-Driven Development行为驱动开发）是一种敏捷开放方式，鼓励开发者、测试、业务方参与开发协作，虽
+    </div>
+    <div class="read-more">
+      <a href="/post/%E6%B5%85%E8%B0%88%E8%A1%8C%E4%B8%BA%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91bdd/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git-tag%E5%BA%94%E7%94%A8/">git tag应用</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-02-28 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      1. Tag概述 像其他版本控制系统（VCS）一样，Git 可以给历史中的某一个提交打上标签，以示重要。 比较有代表性的是人们会使用这个功能来标记发布
+    </div>
+    <div class="read-more">
+      <a href="/post/git-tag%E5%BA%94%E7%94%A8/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/how-to-revert-on-git-master-branch/">git master分支回滚指南</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-08-24 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      1. 概述 1.1 master分支回滚的特殊性 多人协作，修改提交历史的方式易造成冲突 希望所有操作的记录都是保存的，避免丢失代码 希望没有master权限
+    </div>
+    <div class="read-more">
+      <a href="/post/how-to-revert-on-git-master-branch/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/peewee-note2/">peewee笔记(2)——构建自已的peewee文档</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-03-28 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      背景 开源软件的一大好处就是我们可以根据自己的需要进行定制或优化，但这带来的问题是，修改可能无法合并的回社区。随着时间流逝，自己的版本可能和官
+    </div>
+    <div class="read-more">
+      <a href="/post/peewee-note2/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/peewee-note1/">peewee笔记(1)——基本语法</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-03-23 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      peewee使用指南 本系列文章基于peewee 2.6.4，同时会参照Django Orm做点比较。 1.peewee介绍 peewee是一个轻量级
+    </div>
+    <div class="read-more">
+      <a href="/post/peewee-note1/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/emojipythonmysql-utf8mb4%E4%B8%8Eutf/">emoji、Python、MySQL utf8mb4与UTF</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-03-20 </span>
+
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="post-summary">
+      编码、字符集是很大的内容，本文简单聊聊Python、MySQL中处理emoji这种特殊字符的问题。本文描述的Python是2.x版本，3.x
+    </div>
+    <div class="read-more">
+      <a href="/post/emojipythonmysql-utf8mb4%E4%B8%8Eutf/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    </section>
+
+  <nav class="pagination">
+
+    <a class="next" href="/page/2/">
+        <span class="next-text">下一页</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+  </nav>
+        </div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="http://ladder1984.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 -
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+
+
+  <span class="copyright-year">
+    &copy;
+    2012 -
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">ladder1984</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+
+  <script src="static/js/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="static/js/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="static/js/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-99172222-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='static/js/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
